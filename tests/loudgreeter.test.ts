@@ -1,7 +1,7 @@
 import LoudGreeter from "../src/loudgreeter";
 
 describe("LoudGreeter tests", () => {
-    // Act
+    // Arrange
     let test5 = new LoudGreeter("HEY");
     let test6 = new LoudGreeter("Wassup");
     let test7 = new LoudGreeter("Hey there");

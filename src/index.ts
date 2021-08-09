@@ -1,5 +1,7 @@
 import { Greeter } from "./greeter";
 import { JavaScriptGreeter } from "./javascriptgreeter";
+import HtmlGreeter from "./htmlgreeter";
+import LoudGreeter from "./loudgreeter";
 
 let person = new Greeter("Welcome");
 let rachel = person.greet("Rachel");
@@ -8,7 +10,11 @@ console.log(rachel);
 let person2 = new JavaScriptGreeter("Hello");
 console.log(person2.greet("Anu"));
 
+const ps = require("prompt-sync");
+const prompt = ps({ sigint: true });
 
+let name = prompt("Enter your name: ");
+console.log(`Hello, ${name}`)
 
 
 // class Greeting {
@@ -34,8 +40,6 @@ console.log(person2.greet("Anu"));
 // let rachel = person.greet("Rachel");
 // console.log(rachel);
 
-
-
 // class Player {
 //     name: string;
 //     jersey: number;
@@ -50,7 +54,6 @@ console.log(person2.greet("Anu"));
 //         return points > 20 ? true : false;
 //     }
 // }
-
 
 // let giannis = new Player("Giannis", 34);
 // console.log(giannis);
@@ -87,9 +90,7 @@ console.log(person2.greet("Anu"));
 // myBike.go(); // method from the superclass or parent
 // console.log(myBike.speed);
 // myBike.shiftUp(); // method from it's own subclass
-// console.log(myBike.gear); 
-
-
+// console.log(myBike.gear);
 
 // class Phone {
 //     name: string;
@@ -100,11 +101,9 @@ console.log(person2.greet("Anu"));
 //         this.price = price;
 //     }
 
-
 // }
 
 // let landLine = new Phone("landLine", 100);
-
 
 // class SmartPhone extends Phone{
 //     touchScreen: boolean;
@@ -118,7 +117,6 @@ console.log(person2.greet("Anu"));
 
 // console.log(landLine);
 // console.log(iPhone);
-
 
 // class Movies {
 //     name: string;
@@ -148,8 +146,6 @@ console.log(person2.greet("Anu"));
 // let spaceJam2 = new BadMovies("space Jam", 90, 2021, true);
 // console.log(spaceJam2);
 
-
-
 // class Instruments {
 //     name: string;
 //     cool: boolean;
@@ -158,7 +154,7 @@ console.log(person2.greet("Anu"));
 //         this.cool = cool;
 //     }
 //     addToBand():string {
-        
+
 //         return this.name + " was added to band";
 //     }
 // }
@@ -182,17 +178,3 @@ console.log(person2.greet("Anu"));
 
 // console.log(drums.addToBand());
 // console.log(trumpet.addToBand());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
