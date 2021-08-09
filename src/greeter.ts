@@ -6,7 +6,7 @@ export class Greeter {
         this.greeting = greeting;
     }
     public greet(name: string): string {
-        return this.greeting + ", " + name + "!";
+        return `${this.greeting}, ${name}!`;
     }
 }
 
