@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@types/prompt": "^1.1.1",
+    "@types/prompt-sync": "^4.1.1",
     "prompt-sync": "^4.2.0",
     "prompt-sync-history": "^1.0.1",
     "sync": "^0.2.5"

@@ -2,24 +2,44 @@ import { Greeter } from "./greeter";
 import { JavaScriptGreeter } from "./javascriptgreeter";
 import HtmlGreeter from "./htmlgreeter";
 import LoudGreeter from "./loudgreeter";
+import Promptsync from "prompt-sync";
 
-let person = new Greeter("Welcome");
-let rachel = person.greet("Rachel");
-console.log(rachel);
 
-let person2 = new JavaScriptGreeter("Hello");
-console.log(person2.greet("Anu"));
+let prompt = Promptsync();
+// console.log("Hello, " + yourName);
+
+let greetPrompt = prompt("Enter a greeting:")
+let userGreet = new Greeter(greetPrompt);
+let yourName = prompt("Enter your name:");
+console.log(userGreet.greet(yourName));
+
+let greetPrompt2 = prompt("Enter a greeting:")
+let userGreet2 = new JavaScriptGreeter(greetPrompt2);
+let yourName2 = prompt("Enter your name:");
+console.log(userGreet2.greet(yourName2));
+
+let greetPrompt3 = prompt("Enter a greeting:")
+let userGreet3 = new LoudGreeter(greetPrompt3);
+let yourName3 = prompt("Enter your name:");
+console.log(userGreet3.greet(yourName3));
+
+let greetPrompt4 = prompt("Enter a greeting:")
+let userGreet4 = new HtmlGreeter(greetPrompt4);
+let yourName4 = prompt("Enter your name:");
+console.log(userGreet4.greet(yourName4));
+
+
 
 /* attempt at prompt-sync library */
 
-const ps = require("prompt-sync");
-const prompt = ps({ sigint: true });
-
-let name = prompt("Enter your name: ");
-console.log(`Hello, ${name}`)
 
 
-/* notes form class */
+
+
+// 
+
+
+/* notes from class */
 
 // class Player {
 //     name: string;
