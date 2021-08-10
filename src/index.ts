@@ -13,20 +13,20 @@ let userGreet = new Greeter(greetPrompt);
 let yourName = prompt("Enter your name:");
 console.log(userGreet.greet(yourName));
 
-let greetPrompt2 = prompt("Enter a greeting:")
-let userGreet2 = new JavaScriptGreeter(greetPrompt2);
-let yourName2 = prompt("Enter your name:");
-console.log(userGreet2.greet(yourName2));
+// let greetPrompt2 = prompt("Enter a greeting:")
+let userGreet2 = new JavaScriptGreeter(greetPrompt);
+// let yourName2 = prompt("Enter your name:");
+console.log(userGreet2.greet(yourName));
 
-let greetPrompt3 = prompt("Enter a greeting:")
-let userGreet3 = new LoudGreeter(greetPrompt3);
-let yourName3 = prompt("Enter your name:");
-console.log(userGreet3.greet(yourName3));
+// let greetPrompt3 = prompt("Enter a greeting:")
+let userGreet3 = new LoudGreeter(greetPrompt);
+// let yourName3 = prompt("Enter your name:");
+console.log(userGreet3.greet(yourName));
 
-let greetPrompt4 = prompt("Enter a greeting:")
-let userGreet4 = new HtmlGreeter(greetPrompt4);
-let yourName4 = prompt("Enter your name:");
-console.log(userGreet4.greet(yourName4));
+// let greetPrompt4 = prompt("Enter a greeting:")
+let userGreet4 = new HtmlGreeter(greetPrompt);
+// let yourName4 = prompt("Enter your name:");
+console.log(userGreet4.greet(yourName));
 
 
 
