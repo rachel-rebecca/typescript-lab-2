@@ -10,6 +10,8 @@ console.log(rachel);
 let person2 = new JavaScriptGreeter("Hello");
 console.log(person2.greet("Anu"));
 
+/* attempt at prompt-sync library */
+
 const ps = require("prompt-sync");
 const prompt = ps({ sigint: true });
 
@@ -17,28 +19,7 @@ let name = prompt("Enter your name: ");
 console.log(`Hello, ${name}`)
 
 
-// class Greeting {
-//     greeting: string;
-//     constructor(greeting:string){
-//         this.greeting = greeting;
-//     }
-//     greet(name: string): string {
-//         return this.greeting + ", " + name;
-//     }
-// }
-// class Greeter {
-//     greeting: string;
-//     constructor(greeting:string){
-//         this.greeting = greeting;
-//     }
-//     greet(name: string): string {
-//         return this.greeting + ", " + name;
-//     }
-// }
-
-// let person = new Greeter("Welcome");
-// let rachel = person.greet("Rachel");
-// console.log(rachel);
+/* notes form class */
 
 // class Player {
 //     name: string;
