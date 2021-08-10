@@ -19,6 +19,6 @@ describe("HTML Greeter", () => {
         // Arrange
         let test10 = new HtmlGreeter("Greetings", "div");
         // Assert
-        expect(test10.greet("Kaela")).toBe("<div>Greetings, Kaela!</div>");
+        expect(test10).toEqual({greeting:"Greetings",tagName:"div"});
     })
 })
